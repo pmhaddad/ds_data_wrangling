@@ -15,7 +15,7 @@ I have created this repository to share the diagrams I have come up with, and th
 
 Interactive diagrams were created using the `networkD3` library in `R`. As always, any comments are greatly appreciated.
 
-> **Notes on the diagrams**: I have chosen **Sankey diagrams** to represent the different activities involved in data wrangling. The reason to do so was mainly cosmetic: I though it was the best format to display the multitude of nodes in the networks, while making the overall structure clear. But it is important to note that Sankey Diagrams are mostly used to represent network flows and their proportions. In my diagrams, flow proportions were arbitrarily defined. These diagrams are not intended to be a **formal representation** of the relationships between data wrangling activities. For instance, all cyclic relationships are missing (you can read about them on the book). And, of course, the list of activities is not exhausted and some tasks may be missing.
+> **Note on the diagrams**: I have chosen **Sankey diagrams** to represent the different activities involved in data wrangling. The reason to do so was mainly cosmetic: I though it was the best format to display the multitude of nodes in the networks, while making the overall structure clear. But it is important to note that Sankey Diagrams are mostly used to represent network flows and their proportions. In my diagrams, flow proportions were arbitrarily defined. These diagrams are not intended to be a **formal representation** of the relationships between data wrangling activities. For instance, all cyclic relationships are missing (you can read about them on the book). And, of course, the list of activities is not exhausted and some tasks may be missing.
 
 ## Data workflow diagram
 
@@ -27,7 +27,7 @@ The first diagram represents the network of usual activities in the workflow of 
 
 ![](images/data_workflow_framework.PNG)
 
-The cool thing about using `networdD3` is that **it creates interactive diagrams**. Unfortunately, GitHub `README.md` files don't support complex HTML. This is why I'm presenting a static image here.
+The cool thing about using `networkD3` is that **it creates interactive diagrams**. Unfortunately, GitHub `README.md` files don't support complex HTML. This is why I'm presenting a static image here.
 
 > But you can find the interactive version of the diagram [here](http://rpubs.com/paulo_haddad/ds_data_wrangling)!
 
@@ -53,7 +53,7 @@ When the dataset is too big to wrangle as a whole, two additional wrangling task
 
 ![](images/data_wrangling.PNG)
 
-Again, `networdD3` was used to create an interactive diagram, not the static image shown above.
+Again, `networkD3` was used to create an interactive diagram, not the static image shown above.
 
 > The interactive version of the diagram is [here](http://rpubs.com/paulo_haddad/ds_data_wrangling_2)!
 
