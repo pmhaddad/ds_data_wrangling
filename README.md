@@ -115,7 +115,7 @@ Set-based profiling | Core type | Act of determining the distribution of values 
 Structuring  | Core type | Act of changing the form or schema of the data. | 
 Enriching | Core type | Act of adding fundamentally new values to the dataset. | Enriching transformations create new fields or records using new data - information that was not previously present in the dataset. This information can be a related dataset, or formulas use to calculate fields.
 Cleaning | Core type | Act of fixing irregularities in the dataset. | 
-Syntatic profiling | Subtype | Profiling for syntactic constraints involves simply checking whether data values are in (or not in) the set of permissible values. | Syntax refers to constraints on the literal values that are valid in a field (i.e., formatting).
+Syntatic profiling | Subtype | Profiling for syntactic constraints involves simply checking whether data values are in (or not in) the set of permissible values. | Syntax refers to constraints on the literal values that are valid in a field (i.e., formatting or data types).
 Semantic profiling | Subtype | Profiling for semantic constraints involves checking whether data value meanings are in (or not in) the set of meaningful values. | Semantic type constraints correspond to the meaning or interpretation of field values (i.e., context): values are valid if their interpretations satisfy the constraints.
 Intrarecord structuring | Subtype | Act of manipulating individual records or fields. | 
 Interrecord structuring | Subtype | Act of manipulating multiple records and fields at once. | 
@@ -131,6 +131,7 @@ Creating new fields by combination of fields | Operation | Act of creating a new
 Filtering | Operation | Act of removing records or fields of the dataset based on a defined creteria. | 
 Aggregation | Operation | Act of combining multiple records of the dataset into a summary value by applying a defined operation. | Aggregations are paramount to change data granularity. In aggregations, each input record maps to one and only one output record, whereas each output record combines one or more input records.
 Pivot | Operation | Act of shifting records into fields and vice versa. | 
+Reordering records | Operation | Act of changing the order of records in the dataset. | 
 Remove | Operation | Act of removing an innacurate record from a dataset. | 
 Replace | Operation | Act of replacing an innacurate record from a dataset for a value deemed appropriate. | Also known as "imputation".
 Retain and mark | Operation | Act of keeping an innacurate record on a dataset, but flaging it as innacurate. | 
